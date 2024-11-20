@@ -1,0 +1,8 @@
+@layout.app({ title: "Vos chats" })
+@slot('main')
+@each(cat in cats)
+  <div class="cat">
+    <h2>{{ cat.name }}</h2>
+@endeach
+@end
+@end

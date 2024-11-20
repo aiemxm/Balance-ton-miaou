@@ -1,0 +1,16 @@
+@layout.app({ title: "Balance ton miaou" })
+  @slot('meta')
+    <meta name="description" content="Suivre facilement le poids de ses chats ">
+  @endslot
+
+  @slot('main')
+    <h1>hello world</h1>
+<a href="{{ route('oauth.redirect', { provider: 'google' }) }}">
+  Se connecter avec Google
+</a>
+
+<a href="{{ route('oauth.redirect', { provider: 'spotify' }) }}">
+  Se connecter avec Spotify
+</a>
+  @endslot
+@end

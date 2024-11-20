@@ -24,4 +24,16 @@ export default await Env.create(new URL('../', import.meta.url), {
   |----------------------------------------------------------
   */
   SESSION_DRIVER: Env.schema.enum(['cookie', 'memory'] as const),
+
+  /*
+  |----------------------------------------------------------
+  | Variables for configuring ally package
+  |----------------------------------------------------------
+  */
+  GOOGLE_CLIENT_ID: Env.schema.string(),
+  GOOGLE_CLIENT_SECRET: Env.schema.string(),
+  GOOGLE_CALLBACK_URL: Env.schema.string(),
+  SPOTIFY_CLIENT_ID: Env.schema.string(),
+  SPOTIFY_CLIENT_SECRET: Env.schema.string(),
+  SPOTIFY_CALLBACK_URL: Env.schema.string(),
 })
